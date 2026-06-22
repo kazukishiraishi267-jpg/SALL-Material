@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALL Interactive Hub - SMK Digital Marketing</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <header class="bg-indigo-600 text-white shadow-md py-4 px-4 sm:px-6 mb-4 sm:mb-8 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+            <div>
+                <h1 class="text-lg sm:text-xl font-bold tracking-wide">SALL INTERACTIVE HUB</h1>
+                <p class="text-[11px] sm:text-xs text-indigo-200">English for Digital Business - Grade 10 Digital Business</p>
+            </div>
+            <span class="bg-indigo-700 text-[10px] sm:text-xs px-2.5 py-1 rounded-full font-medium self-end sm:self-center">Unit 4: Product Review</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-3 sm:px-4 pb-16 space-y-4 sm:space-y-6">
+
+        <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm text-xs sm:text-sm">
+            <h3 class="font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-info text-indigo-500"></i> How to Use This Material
+            </h3>
+            <p class="text-slate-600 leading-relaxed">Tonton video ulasan gadget di bawah ini pada bagian Warm Up, lalu ketik jawaban Anda langsung pada kolom yang disediakan.</p>
+        </div>
+
+        <div class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 mb-3 sm:mb-4">
+                <div class="bg-indigo-100 text-indigo-600 w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center font-bold text-sm sm:text-base">A</div>
+                <h2 class="text-base sm:text-lg font-bold text-slate-900">Warm Up</h2>
+            </div>
+            <p class="text-[11px] sm:text-xs text-slate-500 mb-4 sm:mb-6">Listen to the audio/video provided by your teacher. Then answer the questions.</p>
+
+            <div class="bg-slate-100 rounded-xl p-3 sm:p-4 flex flex-col items-center justify-center gap-3 mb-5 sm:mb-6 border border-slate-200">
+                <div class="w-full flex items-center gap-2.5 mb-1">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs sm:text-sm font-bold text-slate-800">Warm Up Video Clip</p>
+                        <p class="text-[10px] sm:text-xs text-slate-500">Video bersumber dari penyimpanan cloud mandiri</p>
+                    </div>
+                </div>
+                
+                <div class="w-full max-w-[280px] sm:max-w-sm aspect-[9/16] rounded-xl overflow-hidden shadow-md bg-black">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://drive.google.com/file/d/1Gc7DVBAF5naiQrBaqAZmcB79mOfcpD7Q/preview" 
+                        title="Google Drive Video Player"
+                        frameborder="0" 
+                        allow="autoplay">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="mt-4 sm:mt-6 space-y-4">
+                <p class="text-xs sm:text-sm font-semibold italic text-slate-600 mb-2 flex items-center gap-1.5">
+                    <i class="fa-solid fa-comments text-indigo-500"></i> While listening, think about:
+                </p>
+                
+                <div class="space-y-1">
+                    <label class="block text-xs sm:text-sm font-medium text-slate-700 leading-tight">
+                        1. What product is the person talking about? <span class="block text-[11px] sm:inline text-slate-400 font-normal sm:ml-1">(Apa produk yang sedang dibicarakan?)</span>
+                    </label>
+                    <input type="text" id="w1" placeholder="Type your answer here..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 sm:p-2.5 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition shadow-inner">
+                </div>
+                
+                <div class="space-y-1">
+                    <label class="block text-xs sm:text-sm font-medium text-slate-700 leading-tight">
+                        2. Are they saying good things or bad things about it? <span class="block text-[11px] sm:inline text-slate-400 font-normal sm:ml-1">(Apakah mereka mengatakan hal baik atau buruk tentang produknya?)</span>
+                    </label>
+                    <input type="text" id="w2" placeholder="Type your answer here..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 sm:p-2.5 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition shadow-inner">
+                </div>
+                
+                <div class="space-y-1">
+                    <label class="block text-xs sm:text-sm font-medium text-slate-700 leading-tight">
+                        3. Do you want to buy the product after watching? <span class="block text-[11px] sm:inline text-slate-400 font-normal sm:ml-1">(Apakah kamu ingin membeli produknya setelah menonton?)</span>
+                    </label>
+                    <input type="text" id="w3" placeholder="Type your answer here..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 sm:p-2.5 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition shadow-inner">
+                </div>
+            </div>
+
+            <div class="mt-5 sm:mt-6 flex flex-col sm:flex-row gap-2.5">
+                <button onclick="checkWarmUpAnswers()" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 active:scale-[0.98] text-white px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition shadow-sm cursor-pointer flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-square-check"></i> Check My Answers
+                </button>
+                <button onclick="toggleWarmUpKey()" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 active:scale-[0.98] text-slate-700 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition cursor-pointer flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-eye"></i> Show/Hide Suggested Guide
+                </button>
+            </div>
+
+            <div id="warmUpKeyCard" class="hidden mt-4 bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-3 sm:p-4 text-[11px] sm:text-xs space-y-1.5 animate-fade-in">
+                <p class="font-bold text-xs sm:text-sm text-emerald-800 mb-1 flex items-center gap-1">
+                    <i class="fa-solid fa-lightbulb"></i> Suggested Response Guide (Panduan Jawaban):
+                </p>
+                <p><strong>1.</strong> The person is talking about a smartphone / phone case / tech gadget.</p>
+                <p><strong>2.</strong> They are mostly saying good things (advantages) / bad things (downside).</p>
+                <p><strong>3.</strong> Yes, I do, because the features look useful / No, I don't, because it is not budget-friendly.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function toggleWarmUpKey() {
+            const card = document.getElementById('warmUpKeyCard');
+            card.classList.toggle('hidden');
+        }
+
+        function checkWarmUpAnswers() {
+            const inputs = ['w1', 'w2', 'w3'];
+            let filledCount = 0;
+
+            inputs.forEach(id => {
+                const el = document.getElementById(id);
+                if (el.value.trim() !== "") {
+                    el.classList.remove('border-slate-300', 'border-amber-400');
+                    el.classList.add('border-emerald-500', 'bg-emerald-50/20');
+                    filledCount++;
+                } else {
+                    el.classList.remove('border-slate-300', 'border-emerald-500', 'bg-emerald-50/20');
+                    el.classList.add('border-amber-400');
+                }
+            });
+
+            if (filledCount === 3) {
+                alert("Great! Kamu sudah menuangkan pendapatmu tentang video tersebut. Silakan buka 'Suggested Guide' untuk melihat referensi kosakata pembantu!");
+            } else {
+                alert("Harap isi semua kolom opini terlebih dahulu berdasarkan hasil pengamatan videomu!");
+            }
+        }
+    </script>
+
+    <main class="max-w-4xl mx-auto px-3 sm:px-4 pb-16 space-y-6">
+
+        <div class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 mb-3 sm:mb-4">
+                <div class="bg-indigo-100 text-indigo-600 w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center font-bold text-sm sm:text-base">B</div>
+                <h2 class="text-base sm:text-lg font-bold text-slate-900">Vocabulary Box</h2>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Pelajari kosakata penting di bawah ini yang sering digunakan oleh seorang *Content Creator* saat mengulas produk digital.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                
+                <div class="border border-slate-200 rounded-xl p-3 bg-slate-50/50 hover:bg-white transition shadow-xs">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-1 mb-2">
+                        <span class="font-bold text-indigo-600 text-sm sm:text-base">review</span>
+                        <span class="text-[10px] bg-slate-200 text-slate-600 px-2 py-0.5 rounded-sm font-medium">Verb</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-1"><span class="font-semibold text-slate-700">Arti:</span> mengulas / mengkaji</p>
+                    <p class="text-xs text-slate-600 italic"><span class="font-medium text-slate-700">Ex:</span> "Today, I want to <strong>review</strong> this new phone."</p>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-3 bg-slate-50/50 hover:bg-white transition shadow-xs">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-1 mb-2">
+                        <span class="font-bold text-indigo-600 text-sm sm:text-base">useful</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-700 px-2 py-0.5 rounded-sm font-medium">Adjective</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-1"><span class="font-semibold text-slate-700">Arti:</span> berguna / bermanfaat</p>
+                    <p class="text-xs text-slate-600 italic"><span class="font-medium text-slate-700">Ex:</span> "This tablet is very <strong>useful</strong> for students."</p>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-3 bg-slate-50/50 hover:bg-white transition shadow-xs">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-1 mb-2">
+                        <span class="font-bold text-indigo-600 text-sm sm:text-base">budget-friendly</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-700 px-2 py-0.5 rounded-sm font-medium">Adjective</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-1"><span class="font-semibold text-slate-700">Arti:</span> ramah di kantong / murah</p>
+                    <p class="text-xs text-slate-600 italic"><span class="font-medium text-slate-700">Ex:</span> "Ring-lights are <strong>budget-friendly</strong> tools."</p>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-3 bg-slate-50/50 hover:bg-white transition shadow-xs">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-1 mb-2">
+                        <span class="font-bold text-indigo-600 text-sm sm:text-base">downside</span>
+                        <span class="text-[10px] bg-slate-200 text-slate-600 px-2 py-0.5 rounded-sm font-medium">Noun</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-1"><span class="font-semibold text-slate-700">Arti:</span> kekurangan / sisi negatif</p>
+                    <p class="text-xs text-slate-600 italic"><span class="font-medium text-slate-700">Ex:</span> "The only <strong>downside</strong> is the short cable."</p>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-3 bg-slate-50/50 hover:bg-white transition shadow-xs">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-1 mb-2">
+                        <span class="font-bold text-indigo-600 text-sm sm:text-base">durable</span>
+                        <span class="text-[10px] bg-amber-100 text-amber-700 px-2 py-0.5 rounded-sm font-medium">Adjective</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-1"><span class="font-semibold text-slate-700">Arti:</span> awet / tahan lama</p>
+                    <p class="text-xs text-slate-600 italic"><span class="font-medium text-slate-700">Ex:</span> "The phone case is strong and <strong>durable</strong>."</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 mb-2">
+                <h3 class="text-base sm:text-lg font-bold text-slate-900">Quick Practice</h3>
+            </div>
+            <p class="text-[11px] sm:text-xs text-slate-500 mb-4">Choose 3 words from the table above. Write 1 sentence for each word! <span class="text-slate-400 italic">(Pilih 3 kata dari kotak di atas. Tuliskan 1 kalimat untuk setiap kata!)</span></p>
+
+            <div class="space-y-4 mt-4">
+                
+                <div class="space-y-1.5">
+                    <div class="flex gap-2 items-center">
+                        <span class="text-xs font-bold text-slate-400">1.</span>
+                        <input type="text" id="vocabWord1" placeholder="Masukkan kata pilihan (misal: useful)" class="bg-slate-50 border border-slate-300 rounded-lg p-1.5 text-xs font-semibold text-indigo-600 w-48 focus:ring-1 focus:ring-indigo-500 focus:bg-white outline-none">
+                    </div>
+                    <input type="text" id="vocabSentence1" placeholder="Tulis kalimat bahasa Inggris Anda di sini..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition shadow-inner">
+                </div>
+
+                <div class="space-y-1.5">
+                    <div class="flex gap-2 items-center">
+                        <span class="text-xs font-bold text-slate-400">2.</span>
+                        <input type="text" id="vocabWord2" placeholder="Masukkan kata pilihan" class="bg-slate-50 border border-slate-300 rounded-lg p-1.5 text-xs font-semibold text-indigo-600 w-48 focus:ring-1 focus:ring-indigo-500 focus:bg-white outline-none">
+                    </div>
+                    <input type="text" id="vocabSentence2" placeholder="Tulis kalimat bahasa Inggris Anda di sini..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition shadow-inner">
+                </div>
+
+                <div class="space-y-1.5">
+                    <div class="flex gap-2 items-center">
+                        <span class="text-xs font-bold text-slate-400">3.</span>
+                        <input type="text" id="vocabWord3" placeholder="Masukkan kata pilihan" class="bg-slate-50 border border-slate-300 rounded-lg p-1.5 text-xs font-semibold text-indigo-600 w-48 focus:ring-1 focus:ring-indigo-500 focus:bg-white outline-none">
+                    </div>
+                    <input type="text" id="vocabSentence3" placeholder="Tulis kalimat bahasa Inggris Anda di sini..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition shadow-inner">
+                </div>
+
+            </div>
+
+            <div class="mt-6">
+                <button onclick="checkPractice()" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 active:scale-[0.98] text-white px-6 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition shadow-sm cursor-pointer flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-paper-plane"></i> Submit Answers
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function checkPractice() {
+            // Mengambil elemen kata dan kalimat
+            const w1 = document.getElementById('vocabWord1').value.trim();
+            const s1 = document.getElementById('vocabSentence1').value.trim();
+            const w2 = document.getElementById('vocabWord2').value.trim();
+            const s2 = document.getElementById('vocabSentence2').value.trim();
+            const w3 = document.getElementById('vocabWord3').value.trim();
+            const s3 = document.getElementById('vocabSentence3').value.trim();
+
+            // Memeriksa kelengkapan pengisian mandiri
+            if (w1 === "" || s1 === "" || w2 === "" || s2 === "" || w3 === "" || s3 === "") {
+                alert("Harap pilih kata dan selesaikan pembuatan ketiga kalimat Anda terlebih dahulu!");
+                
+                // Beri warna penanda amber jika ada yang kosong
+                ['vocabWord1', 'vocabSentence1', 'vocabWord2', 'vocabSentence2', 'vocabWord3', 'vocabSentence3'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el.value.trim() === "") {
+                        el.classList.add('border-amber-400');
+                    } else {
+                        el.classList.remove('border-amber-400');
+                    }
+                });
+            } else {
+                // Efek visual sukses jika semua terisi
+                ['vocabWord1', 'vocabSentence1', 'vocabWord2', 'vocabSentence2', 'vocabWord3', 'vocabSentence3'].forEach(id => {
+                    const el = document.getElementById(id);
+                    el.classList.remove('border-amber-400', 'border-slate-300');
+                    el.classList.add('border-emerald-500', 'bg-emerald-50/20');
+                });
+                alert("Excellent! Kalimat kreasi mandiri Anda telah tersimpan di sistem halaman ini. Silakan tunjukkan hasil latihan ini kepada guru Anda saat sesi konfirmasi!");
+            }
+        }
+    </script>
+
+    <main class="max-w-4xl mx-auto px-3 sm:px-4 pb-16 space-y-6">
+
+       <div class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 mb-4">
+                <div class="bg-indigo-100 text-indigo-600 px-2.5 py-1 rounded-lg flex items-center justify-center font-bold text-sm sm:text-base gap-1.5">
+                    <span>C</span>
+                    <i class="fa-solid fa-play text-[10px] sm:text-xs"></i>
+                </div>
+                <h2 class="text-base sm:text-lg font-bold text-slate-900">Media Player Zone</h2>
+            </div>
+            
+            <div class="bg-slate-100 rounded-xl p-3 sm:p-4 flex flex-col items-center justify-center gap-3 border border-slate-200">
+                <div class="w-full flex items-center gap-2.5 mb-1">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs sm:text-sm font-bold text-slate-800">Samsung S9 Comparison Clip</p>
+                        <p class="text-[10px] sm:text-xs text-slate-500">Putar video di bawah ini untuk mengerjakan Task 1 & Task 2</p>
+                    </div>
+                </div>
+                
+                <div class="w-full max-w-[280px] sm:max-w-sm aspect-[9/16] rounded-xl overflow-hidden shadow-md bg-black">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://drive.google.com/file/d/1NehdWc4g8i6NSWCOvBgMLewMDBoC-Mho/preview" 
+                        title="Google Drive Video Player"
+                        frameborder="0" 
+                        allow="autoplay">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 mb-2">
+                <div class="bg-amber-100 text-amber-700 w-6 h-6 rounded-md flex items-center justify-center font-bold text-xs sm:text-sm">1</div>
+                <h3 class="text-sm sm:text-base font-bold text-slate-900">Listening Task: Vocabulary Check</h3>
+            </div>
+            <p class="text-[11px] sm:text-xs text-slate-500 mb-4">Listen carefully to the video clip. Check (✔) the words that you actually hear spoken by the reviewer! <span class="text-slate-400 italic">(Dengarkan video. Beri centang pada kosakata yang benar-benar diucapkan oleh pengulas!)</span></p>
+
+            <div class="grid grid-cols-2 gap-2.5 mt-3">
+                <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-xl bg-slate-50 active:bg-slate-100 cursor-pointer select-none transition">
+                    <input type="checkbox" id="list1" class="w-4 h-4 accent-indigo-600">
+                    <span class="text-xs sm:text-sm font-medium text-slate-700">Insane</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-xl bg-slate-50 active:bg-slate-100 cursor-pointer select-none transition">
+                    <input type="checkbox" id="list2" class="w-4 h-4 accent-indigo-600">
+                    <span class="text-xs sm:text-sm font-medium text-slate-700">Heavy</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-xl bg-slate-50 active:bg-slate-100 cursor-pointer select-none transition">
+                    <input type="checkbox" id="list3" class="w-4 h-4 accent-indigo-600">
+                    <span class="text-xs sm:text-sm font-medium text-slate-700">Lavender</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-xl bg-slate-50 active:bg-slate-100 cursor-pointer select-none transition">
+                    <input type="checkbox" id="list4" class="w-4 h-4 accent-indigo-600">
+                    <span class="text-xs sm:text-sm font-medium text-slate-700">Mint</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-xl bg-slate-50 active:bg-slate-100 cursor-pointer select-none transition">
+                    <input type="checkbox" id="list5" class="w-4 h-4 accent-indigo-600">
+                    <span class="text-xs sm:text-sm font-medium text-slate-700">Waterproof</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 border border-slate-200 rounded-xl bg-slate-50 active:bg-slate-100 cursor-pointer select-none transition">
+                    <input type="checkbox" id="list6" class="w-4 h-4 accent-indigo-600">
+                    <span class="text-xs sm:text-sm font-medium text-slate-700">Noticeable</span>
+                </label>
+            </div>
+
+            <div class="mt-4 flex gap-2">
+                <button onclick="checkListening()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs px-4 py-2 rounded-lg font-medium transition cursor-pointer">
+                    Validate Listening
+                </button>
+                <div id="listFeedback" class="text-xs font-bold hidden self-center"></div>
+            </div>
+        </div>
+
+
+        <div class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-6">
+            <div class="flex items-center gap-2.5 mb-3">
+                <div class="bg-amber-100 text-amber-700 w-6 h-6 rounded-md flex items-center justify-center font-bold text-xs sm:text-sm">2</div>
+                <h3 class="text-sm sm:text-base font-bold text-slate-900">Reading Task: Comprehension Check</h3>
+            </div>
+            <p class="text-[11px] sm:text-xs text-slate-500 mb-4">Read the official script carefully to analyze the product details, then answer the questions below.</p>
+
+            <div class="bg-indigo-50/50 border border-indigo-100 rounded-xl p-4 mb-5 text-xs sm:text-sm text-slate-700 leading-relaxed italic">
+                <strong class="text-indigo-700 not-italic block mb-1"><i class="fa-solid fa-file-lines"></i> Official Video Script:</strong> 
+                "$400 versus $1,200 Samsung tablet. How similar are they? The S9 FE has normal tablet proportions, but the S9 Ultra is completely insane. It's super thin and extremely wide. It feels almost wrong, like I ripped off a laptop screen. Both come with an S Pen that's color matched, and while the Ultra just comes in graphite and beige, the FE actually has a lavender option and this cute mint color. The FE is slower, but outside of games, it's not that noticeable. However, you can definitely tell these two displays apart. The FE has a 90Hz LCD display that's impressive for its price, but it's no match for the Ultra's very extra 120Hz OLED screen."
+            </div>
+
+            <div class="space-y-4">
+                <div class="space-y-1">
+                    <label class="block text-xs sm:text-sm font-medium text-slate-700 leading-tight">
+                        A. Which tablet model is physically described as "super thin and extremely wide"?
+                    </label>
+                    <input type="text" id="r1" placeholder="Type your answer..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition">
+                </div>
+                
+                <div class="space-y-1">
+                    <label class="block text-xs sm:text-sm font-medium text-slate-700 leading-tight">
+                        B. What is the performance downside of the cheaper S9 FE model mentioned by the reviewer?
+                    </label>
+                    <input type="text" id="r2" placeholder="Type your answer..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition">
+                </div>
+                
+                <div class="space-y-1">
+                    <label class="block text-xs sm:text-sm font-medium text-slate-700 leading-tight">
+                        C. Compare the screen displays: What type of screen technologies and refresh rates do both tablets use?
+                    </label>
+                    <input type="text" id="r3" placeholder="Type your answer..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs sm:text-sm focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition">
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col sm:flex-row gap-2.5">
+                <button onclick="checkReadingAnswers()" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition shadow-sm cursor-pointer flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-square-check"></i> Check Reading Answers
+                </button>
+                <button onclick="toggleReadingKey()" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-700 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition cursor-pointer flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-eye"></i> Show/Hide Answer Key
+                </button>
+            </div>
+
+            <div id="readingKeyCard" class="hidden mt-4 bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-3 sm:p-4 text-[11px] sm:text-xs space-y-1.5">
+                <p class="font-bold text-xs sm:text-sm text-emerald-800 mb-1 flex items-center gap-1">
+                    <i class="fa-solid fa-key"></i> Reading Task Answer Key:
+                </p>
+                <p><strong>A.</strong> Samsung Galaxy S9 Ultra.</p>
+                <p><strong>B.</strong> The S9 FE is slower (though it is not that noticeable outside of games).</p>
+                <p><strong>C.</strong> The FE has a 90Hz LCD display, while the Ultra has a 120Hz OLED screen.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // 1. Validasi untuk Soal Listening (Checkbox Kosakata)
+        function checkListening() {
+            // Berdasarkan Transkrip, kata yang BENAR muncul adalah: Insane (1), Lavender (3), Mint (4), Noticeable (6)
+            // Kata yang SALAH/TIDAK ADA: Heavy (2), Waterproof (5)
+            const c1 = document.getElementById('list1').checked;
+            const c2 = document.getElementById('list2').checked;
+            const c3 = document.getElementById('list3').checked;
+            const c4 = document.getElementById('list4').checked;
+            const c5 = document.getElementById('list5').checked;
+            const c6 = document.getElementById('list6').checked;
+
+            const feedback = document.getElementById('listFeedback');
+            feedback.classList.remove('hidden');
+
+            if (c1 && !c2 && c3 && c4 && !c5 && c6) {
+                feedback.className = "text-xs font-bold text-emerald-600 self-center";
+                feedback.innerHTML = "<i class='fa-solid fa-circle-check'></i> Excellent! Kamu berhasil menemukan semua kata dengan tepat.";
+            } else {
+                feedback.className = "text-xs font-bold text-amber-600 self-center";
+                feedback.innerHTML = "<i class='fa-solid fa-triangle-exclamation'></i> Jawaban belum tepat. Coba dengarkan video lagi dengan saksama!";
+            }
+        }
+
+        // 2. Navigasi Kunci Jawaban Reading Task
+        function toggleReadingKey() {
+            const card = document.getElementById('readingKeyCard');
+            card.classList.toggle('hidden');
+        }
+
+        // 3. Validasi Pengisian Esai Mandiri Reading Task
+        function checkReadingAnswers() {
+            const inputs = ['r1', 'r2', 'r3'];
+            let filledCount = 0;
+
+            inputs.forEach(id => {
+                const el = document.getElementById(id);
+                if (el.value.trim() !== "") {
+                    el.classList.remove('border-slate-300', 'border-amber-400');
+                    el.classList.add('border-emerald-500', 'bg-emerald-50/20');
+                    filledCount++;
+                } else {
+                    el.classList.remove('border-slate-300', 'border-emerald-500', 'bg-emerald-50/20');
+                    el.classList.add('border-amber-400');
+                }
+            });
+
+            if (filledCount === 3) {
+                alert("Good job! Semua pertanyaan membaca telah terisi. Silakan buka 'Answer Key' untuk mencocokkan analisis Anda.");
+            } else {
+                alert("Ada pertanyaan analisis membaca yang belum diselesaikan. Periksa kembali teks transkrip di atas!");
+            }
+        }
+    </script>
+</body>
+</html>
